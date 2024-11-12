@@ -1,0 +1,85 @@
+CODE HTML
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Memórias de Jogos Digitais</title>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+	<header>
+		<h1>Work Digital Games</h1>
+		<p>Welcome! Our work is a space where we remember the games that marked our childhoods. Share your memories and discover
+		more about these games!
+		And at the end we will have a quiz based on your knowledge about games. And the best will win prizes!</p>
+	</header>
+
+	<section id="biografia-jogos">
+		<h2>Gaming biography</h2>
+		<div class="jogo">
+			<h3>FIFA</h3>
+			<p>FIFA, developed by EA Sports and released in 1993, is one of the most popular video game franchises in the world.
+			Focused on football simulation, the game stands out for its annual updates, including new squads and graphical
+			improvements, offering an immersive experience for both casual fans and competitive players.</p>
+		</div>
+		<div class="jogo">
+			<h3>Minecraft</h3>
+			<p>Released in 2011 by Mojang, Minecraft is one of the best-selling and most influential games of all time. With a simple
+			but immersive proposal, the game allows players to explore a procedurally generated world, build structures and survive
+			in an environment full of creatures and resources. Its open-ended gameplay, where you can create and modify virtually
+			anything, has won it a diverse fan base, from children to adults..</p>
+		</div>
+		<div class="jogo">
+			<h3>Clash Royale</h3>
+			<p>Launched in 2016 by Supercell, Clash Royale is a real-time strategy game that combines elements of collectible cards,
+			tower defense and multiplayer battles. Players build decks with troop, spell and building cards, and face off in 1v1 or
+			2v2 battles.The game's popularity is due to its accessible gameplay.</p>
+		</div>
+	</section>
+
+	<section id="exposicao">
+		<h2>Games Exhibition</h2>
+		<div class="exposicao-jogo">
+			<div class="jogo-titulo">FIFA</div>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Super_Mario_Bros._Box_Art.png" alt="Super Mario Bros" class="imagem-jogo">
+        </div>
+			<div class="exposicao-jogo">
+				<div class="jogo-titulo">Minecraft</div>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Sonic_the_Hedgehog_1991_Logo.png" alt="Sonic" class="imagem-jogo">
+        </div>
+				<div class="exposicao-jogo">
+					<div class="jogo-titulo">Clash Royale</div>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Legend_of_Zelda_Box_Art.png" alt="Zelda" class="imagem-jogo">
+        </div>
+	</section>
+
+	<section id="memoria">
+		<h2>Share your Memory</h2>
+		<textarea id="entrada-memoria" placeholder="Write your memory about a game..."></textarea>
+		<button id="botao-memoria">Share Memory</button>
+		<div id="balao-memoria-container"></div> <!-- Contêiner para todas as memórias -->
+	</section>
+
+	<section id="quiz-link">
+		<h2>Take part in the Quiz!</h2>
+		<p>Click on the link below to take the gaming quiz!</p>
+		<a href="https://example.com/quiz" target="_blank">Click here for the Quiz</a>
+		<br><br>
+		<p>Or scan the QR Code:</p>
+		<img src="https://api.qrserver.com/v1/create-qr-code/?data=https://example.com/quiz&size=150x150" alt="QR Code para Quiz">
+    </section>
+
+		<footer>
+			<p>&copy; 2024 Work Digital Games</p>
+		</footer>
+
+		<script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+CSS CODE
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+#biografia-jogos {
+    margin-bottom: 40px;
+}
+
+#biografia-jogos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.jogo {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.jogo h3 {
+    font-size: 1.8rem;
+    color: #007BFF;
+}
+
+#exposicao {
+    margin-bottom: 40px;
+}
+
+#exposicao h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.exposicao-jogo {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.jogo-titulo {
+    font-size: 1.5rem;
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+.imagem-jogo {
+    width: 200px;
+    height: auto;
+    border: 5px solid #ff6347;
+    border-radius: 10px;
+}
+
+#memoria {
+    margin-bottom: 40px;
+}
+
+#memoria h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#entrada-memoria {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+#botao-memoria {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#botao-memoria:hover {
+    background-color: #e55347;
+}
+
+#balao-memoria-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.balao-memoria {
+    position: relative;
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    width: fit-content;
+    font-size: 1.2rem;
+    max-width: 300px;
+    margin-top: 20px;
+    animation: floatUp 3s ease-out infinite alternate;
+}
+
+.balao-memoria::after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    border: 10px solid transparent;
+    border-top-color: #ff6347;
+    margin-left: -10px;
+}
+
+#quiz-link {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#quiz-link img {
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 40px;
+}
+
+/* Animação para o balão de memória flutuando */
+@keyframes floatUp {
+    from {
+        transform: translateY(5px);
+        opacity: 0.8;
+    }
+    to {
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+}
