@@ -11,5 +11,3 @@ document.getElementById("botao-memoria").addEventListener("click", function () {
     document.getElementById("entrada-memoria").value = "";
   }
 });
-
-https://create.kahoot.it/share/gaming-legends-quiz/3e8ac474-7c57-4288-ab4b-7a49c45b4070
